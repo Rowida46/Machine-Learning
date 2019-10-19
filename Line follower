@@ -1,0 +1,99 @@
+
+//optimize speed according to counter
+//We are using 2 sensors , connecting both at 4 and 5 respectively INPUT Type 
+//We are using 2 motors as well , with each motors having 3 pins Output Type add  the enable pins
+//We are using Motor driver board as well
+//Assume Black=0 and White=1 
+//When both sensors see white the vechile moves forward
+//When the right sensor reads black (1) vechile moves right
+//When the left sensor reads black (1) vechile moves left
+//When both sensors read black (0) vechile stops
+//We will consider the no.of black lines intersections and we calculated that it was found that we have to make the robot stop when it intersects for the 7th time
+//we will assume int counter starts with 0
+int rightSensor=2;
+int leftSensor=4;
+int firstMotorPin1=7;
+int firstMotorPin2=8;
+int secondMotorPin1=12;
+int secondMotorPin2=13;
+int Enable1=5;
+int Enable2=6;
+int counter=0;
+int FMS=60;
+int SMS=55;
+int flag;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode (rightSensor,INPUT);
+  pinMode (leftSensor, INPUT);
+  pinMode (firstMotorPin1, OUTPUT); // Assuming the Pin1 is the right side of both motors
+  pinMode (firstMotorPin2,OUTPUT);  //Assuming that Pin1 in each motor generates the force to forward  
+  pinMode (secondMotorPin1,OUTPUT); //Assuming that the first motor is the right motor and the second motor  is the left motor )
+  pinMode (secondMotorPin2,OUTPUT);
+  pinMode (Enable1,OUTPUT);
+  pinMode (Enable2,OUTPUT);                      
+  }
+void loop() {
+  // put your main code here, to run repeatedly:
+  //We will begin with the counter code
+  if (digitalRead(leftSensor)==1&&digitalRead(rightSensor)==1) {
+  flag=1;
+  }
+  if (flag==1&&digitalRead(leftSensor)==0&&digitalRead(rightSensor)==0)
+   {counter++;
+    flag=0;}
+      if ((counter==0||counter==1||counter==3||counter==4||counter==5||counter==6||counter==8||counter==9)&&digitalRead(leftSensor)==1&&digitalRead(rightSensor)==1)
+       { digitalWrite(firstMotorPin1,0);
+      digitalWrite (firstMotorPin2,1);
+      digitalWrite (secondMotorPin1,0);
+      digitalWrite (secondMotorPin2,1);
+       analogWrite (Enable1,FMS);
+      analogWrite (Enable2,SMS); }
+   else if (counter==7&&digitalRead(leftSensor)==1&&digitalRead(rightSensor)==1)
+         { digitalWrite(firstMotorPin1,1);
+      digitalWrite (firstMotorPin2,0);
+      digitalWrite (secondMotorPin1,0);
+      digitalWrite (secondMotorPin2,1);
+       analogWrite (Enable1,FMS);
+      analogWrite (Enable2,SMS);
+      }
+else if (counter>=10)
+  {
+    digitalWrite(firstMotorPin1,0);
+    digitalWrite (firstMotorPin2,0);
+    digitalWrite (secondMotorPin1,0);
+    digitalWrite (secondMotorPin2,0);
+     analogWrite (Enable1,0);
+     analogWrite (Enable2,0);
+    
+  }
+      
+else if (counter==0 ||counter==1||counter==2||counter==3||counter==4||counter==5||counter==6||counter==7||counter==8||counter==9){    
+     if ((digitalRead(leftSensor)==0 && digitalRead(rightSensor)==0)) //Moving Forward
+     { digitalWrite(firstMotorPin1,0);
+      digitalWrite (firstMotorPin2,1);
+      digitalWrite (secondMotorPin1,0);
+      digitalWrite (secondMotorPin2,1);
+       analogWrite (Enable1,FMS);
+      analogWrite (Enable2,SMS);
+      }
+
+ else if (digitalRead(leftSensor)==1 && digitalRead(rightSensor)==0)  //Turning Left 
+          { digitalWrite(firstMotorPin1,0);
+       digitalWrite (firstMotorPin2,0);
+      digitalWrite (secondMotorPin1,0);
+      digitalWrite (secondMotorPin2,1);
+      analogWrite (Enable1,FMS);
+      analogWrite (Enable2,SMS); 
+    }
+      
+     else if (digitalRead(leftSensor)==0 && digitalRead(rightSensor)==1) //Turning Right
+    { digitalWrite(firstMotorPin1,0);
+       digitalWrite (firstMotorPin2,1);
+      digitalWrite (secondMotorPin1,0);
+      digitalWrite (secondMotorPin2,0); 
+       analogWrite (Enable1,FMS);
+      analogWrite (Enable2,SMS);
+   
+
+   }  } }
