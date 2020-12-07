@@ -44,14 +44,32 @@ II. ****Summary****
 ![](https://gombru.github.io/assets/cross_entropy_loss/softmax_CE_pipeline.png)
 
 
-***C. Stochastic gradient descent***
+***C. Stochastic Gradient Descent (SGD)***
 
    if we have a million of gradient examples, then we have to sum over 1 million of gradients to calculate the gradient for one step of our algorithm. That's a lot. For 
-    example, to make 1,000 gradient steps, we have to calculate a billion of gradients. So this makes gradient descent infeasible for large scale problems.To overcome this 
-    problem we can use **stochastic gradient descent**.
+   example, to make 1,000 gradient steps, we have to calculate a billion of gradients. So this makes gradient descent infeasible for large scale problems.To overcome this 
+   problem we can use **stochastic gradient descent** , as We need to take a closer look at the amount of computation we make for each iteration of the algorithm.
    
+   - **SGD** randomly picks one data point from the whole data set at each iteration to reduce the computations enormously.
    
-
+   - **SGD** leads to very noisy approximations. If we analyze how the stochastic gradient descent behaves on some sample.
+         
+        - if you form iteration to iteration, the loss function can increase or decrease. But if you make enough iterations of gradient descent then it converges to sum minimum
+         
+        ![](https://miro.medium.com/max/870/1*XYA1O4jrGN8-P6XhHL2NsQ.png)
+        
+   - **SGD** is very sensitive to learning rate val as :
+           
+        - if you choose a large learning rate, then the matrix cannot converge. 
+  
+        - And if you choose too small learning rate, then the conversions will be too small to require thousands and maybe millions of iterations to converge to the minimum. 
+   
+   - To overcome some of these problems, one can use ***mini-batch gradient descent** 
+   
+      1. On every iteration we choose m random examples from our training sample
+      2. Then we calculate the gradient for every of these examples.
+      3. Than we average their gradients, and make a step towards this direction.
+      
 
 III. ****Resources ?****
 ------------
