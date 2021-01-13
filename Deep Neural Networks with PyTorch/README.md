@@ -30,9 +30,11 @@ II. ****Summary****
 
       
 2. ****Tensor***   
-
-      - A torch.Tensor is a multi-dimensional matrix containing elements of a single data type.
-
+      
+      - A torch.Tensor is a  specialized data structure that is similar to multi-dimensional matrix containing elements of a single data type .
+      
+      - In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
+      
       - There are a few main ways to create a tensor, depending on your use case.
 
           - To create a tensor with pre-existing data, use torch.tensor().
