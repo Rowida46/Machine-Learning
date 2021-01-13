@@ -24,26 +24,26 @@ II. ****Summary****
 
     - PyTorch supports **dynamic computation graphs** that allow you to change how the network behaves on the fly, unlike static graphs that are used in frameworks such as Tensorflow.
 
-    ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6IhKSyozCeMqNHjFIrgR5lCbJX1GN4b6rAljy%2BPo8AwwFNDk9PAC9A7SmK2wa1QXWO4BZ%2FO71aCHv%2FiI7fnocgg%3D%3D&b=7)
-
+    ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6Ivtz%2FliAiY7VUvCafMfZxC7A6cB7RZELGn8WbPAjgM%2FYS%2BRcmwe021vaVUFK7rREXNvBopPAyuLjXyI7VGEimQ%3D%3D&b=7)
+    
     - In Tensorflow, you first have to define the entire computation graph of the model and then run your ML model. But in PyTorch, you can define/manipulate your graph on-the-go.
 
       
 2. ****Tensor***   
 
-  - A torch.Tensor is a multi-dimensional matrix containing elements of a single data type.
-  
-  - There are a few main ways to create a tensor, depending on your use case.
+      - A torch.Tensor is a multi-dimensional matrix containing elements of a single data type.
 
-      - To create a tensor with pre-existing data, use torch.tensor().
+      - There are a few main ways to create a tensor, depending on your use case.
 
-      - To create a tensor with specific size, use torch.* tensor creation ops (see Creation Ops).
+          - To create a tensor with pre-existing data, use torch.tensor().
 
-      - To create a tensor with the same size (and similar types) as another tensor, use torch.*_like tensor creation ops (see Creation Ops).
+          - To create a tensor with specific size, use torch.* tensor creation ops (see Creation Ops).
 
-      - To create a tensor with similar type but different size as another tensor, use tensor.new_* creation ops.
-  
-  - A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
+          - To create a tensor with the same size (and similar types) as another tensor, use torch.*_like tensor creation ops (see Creation Ops).
+
+          - To create a tensor with similar type but different size as another tensor, use tensor.new_* creation ops.
+
+      - A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
 
 
 
