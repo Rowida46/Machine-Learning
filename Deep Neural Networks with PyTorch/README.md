@@ -13,13 +13,14 @@ II. ****Summary****
 1. ***What is PyTorch***
 
     - [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
+         >  PyTorch is an improvement over the popular Torch framework , There are many improvements in the new PyTorch framework, however, the most notable change is the adoption of a Dynamic Computational Graph.
+    
+    - Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep 
+        learning models to be expressed in **idiomatic Python**.
 
     - Used for applications such as computer vision and natural language processing.
 
     - Similarly to NumPy, it also has a C (the programming language) backend, so they are both much faster than native Python libraries
-
-    - Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep 
-        learning models to be expressed in **idiomatic Python**.
 
 
     - PyTorch supports **dynamic computation graphs** that allow you to change how the network behaves on the fly, unlike static graphs that are used in frameworks such as Tensorflow.
