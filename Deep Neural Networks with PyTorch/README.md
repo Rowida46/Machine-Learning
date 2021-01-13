@@ -12,21 +12,21 @@ II. ****Summary****
 
 1. ***What is PyTorch***
 
-  - [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
-  
-  - Used for applications such as computer vision and natural language processing.
-  
-  - Similarly to NumPy, it also has a C (the programming language) backend, so they are both much faster than native Python libraries
-  
-  - Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep 
-      learning models to be expressed in **idiomatic Python**.
+    - [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
 
-      
-  - PyTorch supports **dynamic computation graphs** that allow you to change how the network behaves on the fly, unlike static graphs that are used in frameworks such as Tensorflow.
-  
-  ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6IhKSyozCeMqNHjFIrgR5lCbJX1GN4b6rAljy%2BPo8AwwFNDk9PAC9A7SmK2wa1QXWO4BZ%2FO71aCHv%2FiI7fnocgg%3D%3D&b=7)
-  
-  - In Tensorflow, you first have to define the entire computation graph of the model and then run your ML model. But in PyTorch, you can define/manipulate your graph on-the-go.
+    - Used for applications such as computer vision and natural language processing.
+
+    - Similarly to NumPy, it also has a C (the programming language) backend, so they are both much faster than native Python libraries
+
+    - Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep 
+        learning models to be expressed in **idiomatic Python**.
+
+
+    - PyTorch supports **dynamic computation graphs** that allow you to change how the network behaves on the fly, unlike static graphs that are used in frameworks such as Tensorflow.
+
+    ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6IhKSyozCeMqNHjFIrgR5lCbJX1GN4b6rAljy%2BPo8AwwFNDk9PAC9A7SmK2wa1QXWO4BZ%2FO71aCHv%2FiI7fnocgg%3D%3D&b=7)
+
+    - In Tensorflow, you first have to define the entire computation graph of the model and then run your ML model. But in PyTorch, you can define/manipulate your graph on-the-go.
 
       
 2. ****Tensor***   
