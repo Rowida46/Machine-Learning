@@ -2,14 +2,12 @@
 
 ----------
 
-I. Content
-
+**I. Content**
 
 - **What is PyTorch**
 - ***Tensor***
 
 
-------------------
 
 [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
         
