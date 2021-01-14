@@ -17,24 +17,20 @@
 Developed by Facebook's AI Research lab *(FAIR)* .PyTorch emphasizes flexibility and allows DL models to be expressed in **idiomatic Python**.
 
 
-Similarly to NumPy, it also has a C backend, so they are both much faster than native Python, It's a replacement for NumPy to use the **power of GPUs** providing the max fexibility and speed.
-
 
 PyTorch is a Python package that provides two high-level features:
    
    - Tensor computation (like NumPy) with strong GPU acceleration
    - Deep neural networks built on a tape-based autograd system
 
-    
-    
+Similarly to NumPy, it also has a C backend, so they are both much faster than native Python, It's a replacement for NumPy to use the **power of GPUs** providing the max fexibility and speed.
+
 - [More About PyTorch](https://github.com/pytorch/pytorch#more-about-pytorch)
 - [Installation](https://github.com/pytorch/pytorch#installation)
  
  
-***Tensor***   
+***A GPU-Ready Tensor Library***   
       
-![](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/tensor_illustration.png)
-
 A `torch.Tensor` is a  specialized data structure that 1D or 2D matrix containing elements of a single data type .
 
 
