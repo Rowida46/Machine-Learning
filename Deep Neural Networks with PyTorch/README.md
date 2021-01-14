@@ -15,40 +15,40 @@ II. ****Summary****
 
 ***What is PyTorch***
 
-    - [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
+   - [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
          >  PyTorch is an improvement over the popular Torch framework , There are many improvements in the new PyTorch framework, however, the most notable change is the adoption of a Dynamic Computational Graph.
     
-    - Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep 
+   - Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep 
         learning models to be expressed in **idiomatic Python**.
 
-    - Used for applications such as computer vision and natural language processing.
+   - Used for applications such as computer vision and natural language processing.
 
-    - Similarly to NumPy, it also has a C (the programming language) backend, so they are both much faster than native Python libraries
+   - Similarly to NumPy, it also has a C (the programming language) backend, so they are both much faster than native Python libraries
 
 
-    - PyTorch supports **dynamic computation graphs** that allow you to change how the network behaves on the fly, unlike static graphs that are used in frameworks such as Tensorflow.
+   - PyTorch supports **dynamic computation graphs** that allow you to change how the network behaves on the fly, unlike static graphs that are used in frameworks such as Tensorflow.
 
-    ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6Ivtz%2FliAiY7VUvCafMfZxC7A6cB7RZELGn8WbPAjgM%2FYS%2BRcmwe021vaVUFK7rREXNvBopPAyuLjXyI7VGEimQ%3D%3D&b=7)
+       ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6Ivtz%2FliAiY7VUvCafMfZxC7A6cB7RZELGn8WbPAjgM%2FYS%2BRcmwe021vaVUFK7rREXNvBopPAyuLjXyI7VGEimQ%3D%3D&b=7)
     
-    - In Tensorflow, you first have to define the entire computation graph of the model and then run your ML model. But in PyTorch, you can define/manipulate your graph on-the-go.
+   - In Tensorflow, you first have to define the entire computation graph of the model and then run your ML model. But in PyTorch, you can define/manipulate your graph on-the-go.
 
  
  
 ***Tensor***   
       
-      - A `torch.Tensor` is a  specialized data structure that is similar to multi-dimensional matrix containing elements of a single data type .
+   - A `torch.Tensor` is a  specialized data structure that is similar to multi-dimensional matrix containing elements of a single data type .
       
-      - In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
+   - In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
       
-      - There are a few main ways to create a tensor, depending on your use case.
+   - There are a few main ways to create a tensor, depending on your use case.
 
-          - To create a tensor From a NumPy array , use `np.array(data)`
-          - To create a tensor With random or constant values, use `torch.rand(shape)`.
-          - To create a tensor From another tensor , `torch.rand_like(shape, datatype)`.
+        - To create a tensor From a NumPy array , use `np.array(data)`
+        - To create a tensor With random or constant values, use `torch.rand(shape)`.
+        - To create a tensor From another tensor , `torch.rand_like(shape, datatype)`.
 
-      - In-place operations Operations that have a _ suffix are in-place. For example: x.copy_(y), x.t_(), will change x.
+   - In-place operations Operations that have a _ suffix are in-place. For example: x.copy_(y), x.t_(), will change x.
 
-      - A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
+   - A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
 
 
 
