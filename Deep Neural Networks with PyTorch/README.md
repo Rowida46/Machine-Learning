@@ -1,5 +1,6 @@
 ![](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
 
+----------
 
 I. Content
 ------------
@@ -8,36 +9,36 @@ I. Content
 - ***Tensor***
 
 
+------------------
 
-
-II. ****Summary**** 
-------------
-
-***What is PyTorch***
-
-   - [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
+[PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
         
-       >  PyTorch is an improvement over the popular Torch framework , There are many improvements in the new PyTorch framework, however, the most notable change is the adoption 
+   >  PyTorch is an improvement over the popular Torch framework , There are many improvements in the new PyTorch framework, however, the most notable change is the adoption 
          of a **Dynamic Computational Graph**.
+        
+   ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6Ivtz%2FliAiY7VUvCafMfZxC7A6cB7RZELGn8WbPAjgM%2FYS%2BRcmwe021vaVUFK7rREXNvBopPAyuLjXyI7VGEimQ%3D%3D&b=7)
+
     
-   - Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep 
-        learning models to be expressed in **idiomatic Python**.
-
-   - Used for applications such as computer vision and natural language processing.
-
-   - Similarly to NumPy, it also has a C (the programming language) backend, so they are both much faster than native Python libraries
+Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep
+learning models to be expressed in **idiomatic Python**.
 
 
-   - PyTorch supports **dynamic computation graphs** that allow you to change how the network behaves on the fly, unlike static graphs that are used in frameworks such as Tensorflow.
+Similarly to NumPy, it also has a C (the programming language) backend, so they are both much faster than native Python libraries , however , It's a replacement for NumPy to use the **power of GPUs** providing maximum flexibility and speed..
 
-       ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6Ivtz%2FliAiY7VUvCafMfZxC7A6cB7RZELGn8WbPAjgM%2FYS%2BRcmwe021vaVUFK7rREXNvBopPAyuLjXyI7VGEimQ%3D%3D&b=7)
+PyTorch is a Python package that provides two high-level features:
+     - Tensor computation (like NumPy) with strong GPU acceleration
+     - Deep neural networks built on a tape-based autograd system
+
+
     
-   - In Tensorflow, you first have to define the entire computation graph of the model and then run your ML model. But in PyTorch, you can define/manipulate your graph on-the-go.
-
+- [More About PyTorch](https://github.com/pytorch/pytorch#more-about-pytorch)
+- [Installation](https://github.com/pytorch/pytorch#installation)
  
  
 ***Tensor***   
       
+![](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/tensor_illustration.png)
+
    - A `torch.Tensor` is a  specialized data structure that is similar to multi-dimensional matrix containing elements of a single data type .
       
    - In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
@@ -48,7 +49,7 @@ II. ****Summary****
         - To create a tensor With random or constant values, use `torch.rand(shape)`.
         - To create a tensor From another tensor , `torch.rand_like(shape, datatype)`.
 
-   - In-place operations Operations that have a _ suffix are in-place. For example: x.copy_(y), x.t_(), will change x.
+   - In-place operations Operations that have a _ suffix are in-place. For example: `x.copy_(y)`, `x.t_()`, will change x.
 
    - A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
 
@@ -69,3 +70,7 @@ III. **Referances**
 - [Trying to understand what “save_for_backward” is in Pytorch question on stackoverflow](https://stackoverflow.com/questions/64460017/trying-to-understand-what-save-for-backward-is-in-pytorch)
 
 - [PYTORCH: DEFINING NEW AUTOGRAD FUNCTIONS](https://pytorch.org/tutorials/beginner/examples_autograd/two_layer_net_custom_function.html)
+
+- Implementing a Transformer with PyTorch and [PyTorch Lightning](https://www.linkedin.com/company/pytorch-lightning/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_details_shares%3BO3kQZoBQQd6AwlfGTfvmDg%3D%3D)
+
+- Full Stack Deep Learning, Colab: https://lnkd.in/dRZTdBm
