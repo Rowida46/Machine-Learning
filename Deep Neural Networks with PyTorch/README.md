@@ -13,7 +13,7 @@
         
    >  It's an improvement overTorch framework, however, the most notable change is the adoption of a **Dynamic Computational Graph**.
         
-      ![](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/dynamic_graph.gif)
+   ![](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/dynamic_graph.gif)
     
 Developed by Facebook's AI Research lab *(FAIR)* .PyTorch emphasizes flexibility and allows DL models to be expressed in **idiomatic Python**.
 
