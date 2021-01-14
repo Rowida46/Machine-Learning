@@ -98,6 +98,6 @@ III. **Referances**
 
 - [PYTORCH: DEFINING NEW AUTOGRAD FUNCTIONS](https://pytorch.org/tutorials/beginner/examples_autograd/two_layer_net_custom_function.html)
 
-- Implementing a Transformer with PyTorch and [PyTorch Lightning](https://www.linkedin.com/company/pytorch-lightning/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_details_shares%3BO3kQZoBQQd6AwlfGTfvmDg%3D%3D)
+- [Implementing a Transformer with PyTorch and PyTorch Lightning](https://www.linkedin.com/company/pytorch-lightning/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_details_shares%3BO3kQZoBQQd6AwlfGTfvmDg%3D%3D)
 
 - [Full Stack Deep Learning, Colab:](https://lnkd.in/dRZTdBm)
