@@ -40,16 +40,30 @@ PyTorch provides Tensors that can live either on the CPU or the GPU and accelera
 In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
       
    - There are a few main ways to create a tensor, depending on your use case.
-
    - To create a tensor From a NumPy array , use `np.array(data)`
-   
    - To create a tensor With random or constant values, use `torch.rand(shape)`.
    - To create a tensor From another tensor , `torch.rand_like(shape, datatype)`.
-
    - In-place operations Operations that have a _ suffix are in-place. For example: `x.copy_(y)`, `x.t_()`, will change x.
+
+
+
+### *******Autograd******* 
+
+`torch.autograd` is PyTorch’s automatic differentiation engine that powers neural network training.
 
 A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
 
+Autograd has multiple goals:
+
+   - Full integration with neural network modules: mix and match auto-differentiation with user-provided gradients
+   - The main intended application of Autograd is **gradient-based optimization**
+
+*To get a conceptual understanding of how autograd helps a neural network train:*
+        
+   - Neural networks (NNs) are a collection of functions that are executed on input data and parameters (consisting of weights and biases),
+   - Training a NN happens in two steps:
+        1.Forward Propagation
+        2.Backward Propagation
 
 
 
@@ -57,6 +71,7 @@ A tensor can be created with `requires_grad=True` so that torch.autograd records
 III. **Referances**
 ------------
 
+- [PyTorch docs autograd ](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html)
 - [PyTorch docs Tensor](https://pytorch.org/docs/stable/tensors.html)
 - [PyTorch docs about Tensor](https://pytorch.org/docs/stable/tensors.html)
 
