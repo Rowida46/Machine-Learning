@@ -30,7 +30,7 @@ II. ****Summary****
     - In Tensorflow, you first have to define the entire computation graph of the model and then run your ML model. But in PyTorch, you can define/manipulate your graph on-the-go.
 
       
-2. ****Tensor***   
+2. ***Tensor***   
       
       - A `torch.Tensor` is a  specialized data structure that is similar to multi-dimensional matrix containing elements of a single data type .
       
@@ -38,13 +38,11 @@ II. ****Summary****
       
       - There are a few main ways to create a tensor, depending on your use case.
 
-          - To create a tensor with pre-existing data, use torch.tensor().
+          - To create a tensor From a NumPy array , use `np.array(data)`
+          - To create a tensor With random or constant values, use `torch.rand(shape)`.
+          - To create a tensor From another tensor , `torch.rand_like(shape, datatype)`.
 
-          - To create a tensor with specific size, use torch.* tensor creation ops (see Creation Ops).
-
-          - To create a tensor with the same size (and similar types) as another tensor, use torch.*_like tensor creation ops (see Creation Ops).
-
-          - To create a tensor with similar type but different size as another tensor, use tensor.new_* creation ops.
+      - In-place operations Operations that have a _ suffix are in-place. For example: x.copy_(y), x.t_(), will change x.
 
       - A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
 
