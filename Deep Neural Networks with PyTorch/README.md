@@ -11,22 +11,20 @@
 
 [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
         
-   >  PyTorch is an improvement over the popular Torch framework , There are many improvements in the new PyTorch framework, however, the most notable change is the adoption 
-         of a **Dynamic Computational Graph**.
+   >  It's an improvement overTorch framework, however, the most notable change is the adoption of a **Dynamic Computational Graph**.
         
-   ![](https://us.hidester.com/proxy.php?u=eJwBQQC%2B%2F3M6NTc6Ivtz%2FliAiY7VUvCafMfZxC7A6cB7RZELGn8WbPAjgM%2FYS%2BRcmwe021vaVUFK7rREXNvBopPAyuLjXyI7VGEimQ%3D%3D&b=7)
-
+   ![](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/dynamic_graph.gif)
     
-Developed by Facebook's AI Research lab *(FAIR)*. It is free and open-source software released under the Modified BSD license.PyTorch emphasizes flexibility and allows deep
-learning models to be expressed in **idiomatic Python**.
+Developed by Facebook's AI Research lab *(FAIR)* .PyTorch emphasizes flexibility and allows DL models to be expressed in **idiomatic Python**.
 
 
-Similarly to NumPy, it also has a C (the programming language) backend, so they are both much faster than native Python libraries , however , It's a replacement for NumPy to use the **power of GPUs** providing maximum flexibility and speed..
+Similarly to NumPy, it also has a C backend, so they are both much faster than native Python, It's a replacement for NumPy to use the **power of GPUs** providing maximum       
+flexibility and speed.
 
 PyTorch is a Python package that provides two high-level features:
-     - Tensor computation (like NumPy) with strong GPU acceleration
-     - Deep neural networks built on a tape-based autograd system
-
+   
+   - Tensor computation (like NumPy) with strong GPU acceleration
+   - Deep neural networks built on a tape-based autograd system
 
     
 - [More About PyTorch](https://github.com/pytorch/pytorch#more-about-pytorch)
@@ -37,19 +35,24 @@ PyTorch is a Python package that provides two high-level features:
       
 ![](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/tensor_illustration.png)
 
-   - A `torch.Tensor` is a  specialized data structure that is similar to multi-dimensional matrix containing elements of a single data type .
+A `torch.Tensor` is a  specialized data structure that 1D or 2D matrix containing elements of a single data type .
+
+
+PyTorch provides Tensors that can live either on the CPU or the GPU and accelerates the computation by a huge amount.
+
       
-   - In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
+In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
       
    - There are a few main ways to create a tensor, depending on your use case.
 
-        - To create a tensor From a NumPy array , use `np.array(data)`
-        - To create a tensor With random or constant values, use `torch.rand(shape)`.
-        - To create a tensor From another tensor , `torch.rand_like(shape, datatype)`.
+   - To create a tensor From a NumPy array , use `np.array(data)`
+   
+   - To create a tensor With random or constant values, use `torch.rand(shape)`.
+   - To create a tensor From another tensor , `torch.rand_like(shape, datatype)`.
 
    - In-place operations Operations that have a _ suffix are in-place. For example: `x.copy_(y)`, `x.t_()`, will change x.
 
-   - A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
+A tensor can be created with `requires_grad=True` so that torch.autograd records operations on them for automatic differentiation.
 
 
 
