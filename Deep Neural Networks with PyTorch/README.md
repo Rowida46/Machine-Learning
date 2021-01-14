@@ -9,6 +9,8 @@
 
 
 
+
+
 [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
         
    >  It's an improvement overTorch framework, however, the most notable change is the adoption of a **Dynamic Computational Graph**.
@@ -31,8 +33,11 @@ Similarly to NumPy, it also has a C backend, so they are both much faster than n
 - [Installation](https://github.com/pytorch/pytorch#installation)
  
  
+ 
+ 
 ### *******A GPU-Ready Tensor Library******* 
-      
+ 
+ 
 A `torch.Tensor` is a  specialized data structure that 1D or 2D matrix containing elements of a single data type .
 
 
@@ -49,7 +54,9 @@ In PyTorch, we use tensors to encode the inputs and outputs of a model, as well 
 
 
 
-### *******Autograd******* 
+
+### *******Autograd*******
+
 
 `torch.autograd` is PyTorch’s automatic differentiation engine that powers neural network training.
 
@@ -62,7 +69,7 @@ Autograd has multiple goals:
 
 *To get a conceptual understanding of how autograd helps a neural network train:*
 
-[](https://blog.paperspace.com/content/images/2019/03/computation_graph.png)
+![](https://blog.paperspace.com/content/images/2019/03/computation_graph.png)
 
    - Neural networks (NNs) are a collection of functions that are executed on input data and parameters (consisting of weights and biases),
    - Training a NN happens in two steps:
