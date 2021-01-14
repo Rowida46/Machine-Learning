@@ -5,6 +5,7 @@
 
 - **What is PyTorch**
 - ***Tensor***
+- **Automatic Differentiation and Autograd**
 
 
 
@@ -60,11 +61,17 @@ Autograd has multiple goals:
    - The main intended application of Autograd is **gradient-based optimization**
 
 *To get a conceptual understanding of how autograd helps a neural network train:*
-        
+
+[](https://blog.paperspace.com/content/images/2019/03/computation_graph.png)
+
    - Neural networks (NNs) are a collection of functions that are executed on input data and parameters (consisting of weights and biases),
    - Training a NN happens in two steps:
-       1. Forward Propagation
-       2. Backward Propagation
+   
+       1. A forward pass to compute the value of the loss function.
+           > The forward pass is pretty straight forward. The output of one layer is the input to the next and so forth.
+           
+       2. A backward pass to compute the gradients of the learnable parameters
+       ![](https://blog.paperspace.com/content/images/2019/03/full_graph.png)
 
 
 
