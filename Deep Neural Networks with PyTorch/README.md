@@ -62,8 +62,8 @@ Autograd has multiple goals:
         
    - Neural networks (NNs) are a collection of functions that are executed on input data and parameters (consisting of weights and biases),
    - Training a NN happens in two steps:
-        1.Forward Propagation
-        2.Backward Propagation
+       1. Forward Propagation
+       2. Backward Propagation
 
 
 
