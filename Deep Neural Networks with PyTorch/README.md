@@ -17,8 +17,8 @@
 Developed by Facebook's AI Research lab *(FAIR)* .PyTorch emphasizes flexibility and allows DL models to be expressed in **idiomatic Python**.
 
 
-Similarly to NumPy, it also has a C backend, so they are both much faster than native Python, It's a replacement for NumPy to use the **power of GPUs** providing maximum       
-flexibility and speed.
+Similarly to NumPy, it also has a C backend, so they are both much faster than native Python, It's a replacement for NumPy to use the **power of GPUs** providing the max fexibility and speed.
+
 
 PyTorch is a Python package that provides two high-level features:
    
