@@ -29,7 +29,7 @@ Similarly to NumPy, it also has a C backend, so they are both much faster than n
 - [Installation](https://github.com/pytorch/pytorch#installation)
  
  
-***A GPU-Ready Tensor Library***   
+#### A GPU-Ready Tensor Library   
       
 A `torch.Tensor` is a  specialized data structure that 1D or 2D matrix containing elements of a single data type .
 
