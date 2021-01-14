@@ -22,9 +22,10 @@ Similarly to NumPy, it also has a C backend, so they are both much faster than n
 
 PyTorch is a Python package that provides two high-level features:
    
-   - Tensor computation (like NumPy) with strong GPU acceleration
-   - Deep neural networks built on a tape-based autograd system
+    - Tensor computation (like NumPy) with strong GPU acceleration
+    - Deep neural networks built on a tape-based autograd system
 
+    
     
 - [More About PyTorch](https://github.com/pytorch/pytorch#more-about-pytorch)
 - [Installation](https://github.com/pytorch/pytorch#installation)
