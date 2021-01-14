@@ -13,7 +13,7 @@ I. Content
 II. ****Summary**** 
 ------------
 
-1. ***What is PyTorch***
+***What is PyTorch***
 
     - [PyTorch](https://us.hidester.com/proxy.php?u=eJwrtjI0s1ISmnSq537GmV4ne9cnTHXz1JWsAXPICVc%3D&b=7) is an open source machine learning library based on the Torch library.
          >  PyTorch is an improvement over the popular Torch framework , There are many improvements in the new PyTorch framework, however, the most notable change is the adoption of a Dynamic Computational Graph.
@@ -32,8 +32,9 @@ II. ****Summary****
     
     - In Tensorflow, you first have to define the entire computation graph of the model and then run your ML model. But in PyTorch, you can define/manipulate your graph on-the-go.
 
-      
-2. ***Tensor***   
+ 
+ 
+***Tensor***   
       
       - A `torch.Tensor` is a  specialized data structure that is similar to multi-dimensional matrix containing elements of a single data type .
       
