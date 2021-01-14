@@ -12,7 +12,7 @@
         
    >  It's an improvement overTorch framework, however, the most notable change is the adoption of a **Dynamic Computational Graph**.
         
-   <img src="https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/dynamic_graph.gif" width="1000">
+   <img src="https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/dynamic_graph.gif" width="800">
 
     
 Developed by Facebook's AI Research lab *(FAIR)* .PyTorch emphasizes flexibility and allows DL models to be expressed in **idiomatic Python**.
@@ -86,4 +86,4 @@ III. **Referances**
 
 - Implementing a Transformer with PyTorch and [PyTorch Lightning](https://www.linkedin.com/company/pytorch-lightning/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_details_shares%3BO3kQZoBQQd6AwlfGTfvmDg%3D%3D)
 
-- Full Stack Deep Learning, Colab: https://lnkd.in/dRZTdBm
+- [Full Stack Deep Learning, Colab:](https://lnkd.in/dRZTdBm)
